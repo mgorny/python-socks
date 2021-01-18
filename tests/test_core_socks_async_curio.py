@@ -1,10 +1,11 @@
 import ssl
 from typing import Optional
 
-import curio
+import pytest
+
+pytest.importorskip('curio')
 import curio.io
 import curio.ssl as curiossl
-import pytest  # noqa
 from yarl import URL  # noqa
 
 from python_socks import (

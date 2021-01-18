@@ -1,8 +1,8 @@
 import socket
 import ssl
-import trio  # noqa
+import pytest
+pytest.importorskip('trio')
 
-import pytest  # noqa
 from yarl import URL  # noqa
 
 from python_socks import (
